@@ -26,7 +26,7 @@ cor(iris$Petal.Length, iris$Petal.Width)
 
 # Return values of `iris` levels 
 x=levels(iris$Species)
-
+x
 # Print Setosa correlation matrix
 print(x[1])
 cor(iris[iris$Species==x[1],1:4])
