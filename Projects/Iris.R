@@ -1,29 +1,17 @@
-ir = iris
-ir
-head(irlibrary(ggplot2) # Data visualization
+library(ggplot2) # Data visualization
 library(ggvis)
 library(gmodels)
 library(class)
 library(caret)
 library(lattice)
 library(e1071)
-?rep
-?seq
 # Read in `iris` data
-iris
-ir
-v <- c("M","F")
-v1 <- rep(v, each = 25)
-v2 <- rep(v1, times = 3)
-v2
-Gender <- factor(v2)
-Gender
 # Print first lines
 head(iris)
-
+iris
 # Add column names
 names(iris) <- c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width", "Species")
-?names
+names(iris)
 # Check the result
 iris
 
@@ -166,4 +154,3 @@ predictions<-predict.train(object=model_knn,iris.test[,1:4], type="raw")
 
 # Confusion matrix
 confusionMatrix(predictions,iris.test[,5])
-
